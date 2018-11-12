@@ -1,7 +1,7 @@
 import itertools
 
 def read_file(dir, file):
-    return open(dir + file,'r').readlines()
+    return open(dir + file,'r').read().splitlines()
 
 def load(dir, day):
     return read_file(dir, "day{}.txt".format(day))
